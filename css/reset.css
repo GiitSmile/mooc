@@ -9,7 +9,7 @@ div {
 }
 body {
     min-width: 1200px;
-    background-color: #edeff0;
+    background-color: #fff;
 }
 a:link,
 a:visited {
@@ -26,6 +26,11 @@ a:active {
     clear: both;
     visibility: hidden;
 }
-.clearfix {
-    *zoom: 1;
+html,body{
+    font: 14px/1.5 "PingFang SC", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
+    color: #14191e;
+}
+
+:link, :visited, ins {
+    text-decoration: none;
 }

@@ -7,10 +7,17 @@
 #header{
     padding-top: 10px;
     height: 70px;
+    background-image: initial;
 }
 /*导航*/
 #nav{
     padding-right: 10px;
+    margin: 0 auto;
+    width: auto;
+    z-index: 1000;
+    height: 60px;
+    position: relative;
+    z-index: 1000;
 }
 
 #logo{
@@ -27,6 +34,50 @@
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-    background-size: 100%;
     background: url("../images/logo.png") no-repeat center center;
+    background-size: 100%;
+
+}
+
+div{
+    background-size: cover
+}
+a:link, a:visited {
+    color: #14191e;
+}
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+a, input, button {
+    outline: none;
+}
+
+#nav-item-index{
+    display: none;
+}
+
+.nav-item li{
+    float: left;
+}
+.nav-item a{
+    position: relative;
+    padding: 0 20px;
+    display: block;
+    color: #07111b;
+    text-align: center;
+    font-size: 16px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.nav-item a:hover{
+    color: #f01414;
+}
+
+#login-area{
+    float: right;
+    position: relative;
 }
