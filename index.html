@@ -5,6 +5,8 @@
     <title>慕课网(IMOOC)-国内最大的IT技能学习平台</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body id="index">
 <div id="header">
@@ -21,11 +23,30 @@
         </ul>
         <div id="login-area">
             <ul class="clearfix logined">
-                <li class="header-app"><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+                <li class="header-app"><a href="#"><img src="images/smartphone.png"></a></li>
+                <li><a href="#"><img src="images/notifications_active.png"></a></li>
+                <li><a href="#"><img src="images/mail.png"></a></li>
+                <li class="set_btn user-card-box">
+                    <a id="head" href="#"><img width="40" height="40" src="images/head.jpg"></a>
+                </li>
             </ul>
+        </div>
+        <div class="search-wrap clearfix" style="min-width: 32px; height: 60px">
+            <div class="search-area" data-search="top-banner">
+                <input class="search-input" data-suggest-trigger="suggest-trigger" type="text"
+                       placeholder="请输入想搜索的内容..." autocomplete="off">
+                <input type="hidden" class="btn-search">
+                <ul class="search-area-result">
+                    <li data-key="轮播图">轮播图</li>
+                    <li data-key="ajax">ajax</li>
+                    <li data-key="jquery">jquery</li>
+                    <li data-key="h5移动端页面">h5移动端页面</li>
+                    <li data-key="横向导航栏">横向导航栏</li>
+                </ul>
+            </div>
+            <div class="showhide-search">
+                <i class="icon-search"><img src="images/search.png"></i>
+            </div>
         </div>
     </div>
 </div>
