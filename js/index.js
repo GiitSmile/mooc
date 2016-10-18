@@ -1,6 +1,7 @@
 /**
  * Created by LiMuyang on 2016/10/18.
  */
+
 $(document).ready(function () {
     $(".search-input").focus(function () {
 
@@ -10,4 +11,7 @@ $(document).ready(function () {
 
         $(".search-area-result").stop().slideUp(200);
     });
-})
+
+
+});
+
