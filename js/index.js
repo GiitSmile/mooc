@@ -14,10 +14,12 @@ $(document).ready(function () {
     });
 
 
-    var banner=$(".banner-pr");
-    slides = banner.find(".banner-slide")
-    total = slides.length;
-    index =0;
+    var banner=$(".banner-pr"),
+    slides = banner.find(".banner-slide"),
+    total = slides.length,
+    index =0,
+    interval = 5000,
+    timer = null;
 
     function changePics() {
         $(".banner-dots span").click(function () {
@@ -59,6 +61,15 @@ $(document).ready(function () {
 
     }
 
+    function autoPlay() {
+        if (timer)
+            clearInterval(timer);
+
+        timer=setInterval(function () {
+            clickNext();
+        },interval);
+    }
+
 
 
     $(".prev").click(clickPrev);
@@ -66,5 +77,11 @@ $(document).ready(function () {
 
     changePics();
 
+    banner.on('mouseenter', function(e){
+        if(timer) clearInterval(timer);
+    }).on('mouseleave', function(e){
+        autoPlay();
+    });
+    autoPlay();
 });
 
