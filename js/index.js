@@ -70,6 +70,14 @@ $(document).ready(function () {
         },interval);
     }
 
+    $(".menuContent .item").mouseover(function () {
+        $(".submenu").hide();
+        var selector = $(this).attr("data-id");
+        $("."+selector).show();
+    }).mouseleave(function () {
+        $(".submenu").hide();
+    })
+
 
 
     $(".prev").click(clickPrev);
