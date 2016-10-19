@@ -390,9 +390,14 @@ body .banner-bk{
     bottom: 0;
     background-repeat: no-repeat;
     background-position: center 0;
+    display: none;
 }
 
 .banner-pr .next:hover,
 .banner-pr .prev:hover {
     background-color: rgba(7, 17, 27, 0.5);
+}
+
+.banner-content div .slide-active{
+    display: block;
 }
